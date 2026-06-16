@@ -1,0 +1,38 @@
+name: Documentation improvement
+description: Suggest a README, docs, or example improvement
+title: "Docs: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to suggest documentation improvements for Hoover.
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation location
+      description: Which file or section should be improved?
+      placeholder: README.md usage section, examples/bug_report.md, CONTRIBUTING.md...
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear or missing?
+      description: Describe the documentation gap.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed improvement
+      description: What should be added, removed, or rewritten?
+    validations:
+      required: false
+  - type: textarea
+    id: maintainer_value
+    attributes:
+      label: Maintainer value
+      description: How would this help OSS maintainers use or contribute to Hoover?
+    validations:
+      required: false
