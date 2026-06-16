@@ -1,0 +1,45 @@
+name: Maintainer workflow request
+description: Propose a workflow that would help OSS maintainers
+title: "Workflow: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose a practical OSS maintainer workflow for Hoover.
+  - type: textarea
+    id: pain
+    attributes:
+      label: Maintainer pain point
+      description: What maintenance work is slow, repetitive, unclear, or hard to hand off?
+      placeholder: Maintainers spend time converting long issue threads into triage notes...
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input Hoover would receive
+      description: What kind of text, issue, PR note, or release update should Hoover process?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Desired output
+      description: What should Hoover generate for a maintainer to review?
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Human review step
+      description: How should a maintainer review, edit, or approve the output?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or failure modes
+      description: What could Hoover miss, overstate, or misclassify?
+    validations:
+      required: false
