@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a problem with Hoover behavior
+title: "Bug: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a Hoover issue. Please provide enough detail for a maintainer to reproduce and triage the problem.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened?
+      placeholder: The generated maintainer brief missed reproduction details...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can a maintainer reproduce this?
+      placeholder: |
+        1. Create an issue report with...
+        2. Run hoover...
+        3. Review the output...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should Hoover have done?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What did Hoover do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, OS, Hoover version, and command used.
+      placeholder: |
+        - Python:
+        - OS:
+        - Hoover version:
+        - Command:
+    validations:
+      required: false
+  - type: textarea
+    id: input
+    attributes:
+      label: Example input
+      description: Paste a minimal input example if possible. Remove sensitive information.
+      render: markdown
+    validations:
+      required: false
