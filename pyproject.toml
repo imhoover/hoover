@@ -12,7 +12,17 @@ license = { text = "MIT" }
 authors = [
   { name = "imhoover" }
 ]
-keywords = ["open-source", "maintainers", "triage", "issues", "cli"]
+keywords = [
+  "open-source",
+  "maintainers",
+  "maintainer-tools",
+  "issue-triage",
+  "release-notes",
+  "github",
+  "oss",
+  "cli",
+  "developer-tools"
+]
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Environment :: Console",
@@ -23,7 +33,8 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Software Development :: Bug Tracking",
-  "Topic :: Software Development :: Documentation"
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Software Development :: Quality Assurance"
 ]
 
 [project.scripts]
